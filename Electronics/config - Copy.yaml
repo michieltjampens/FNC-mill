@@ -27,10 +27,10 @@ axes:
       feed_scaler: 1.100
 
     motor0:
-      limit_neg_pin: NO_PIN
-      limit_pos_pin: NO_PIN
+      limit_neg_pin: gpio.36:high
+      limit_pos_pin: gpio.39:high
       limit_all_pin: NO_PIN
-      hard_limits: false
+      hard_limits: true
       pulloff_mm: 1.000
       standard_stepper:
         step_pin: I2SO.1
@@ -54,10 +54,10 @@ axes:
       feed_scaler: 1.100
 
     motor0:
-      limit_neg_pin: NO_PIN
-      limit_pos_pin: NO_PIN
+      limit_neg_pin: gpio.34:high
+      limit_pos_pin: gpio.35:high
       limit_all_pin: NO_PIN
-      hard_limits: false
+      hard_limits: true
       pulloff_mm: 1.000
       standard_stepper:
         step_pin: I2SO.3
@@ -128,7 +128,7 @@ control:
   macro3_pin: NO_PIN
   
 probe:
-  pin: NO_PIN
+  pin: gpio.2
   check_mode_start: true
 
 start:
