@@ -71,8 +71,8 @@ axes:
       hard_limits: false
       pulloff_mm: 1.000
       standard_stepper:
-        step_pin: I2SO.7
-        direction_pin: I2SO.6
+        step_pin: I2SO.6
+        direction_pin: I2SO.7
         disable_pin: NO_PIN
 
   z:
@@ -98,8 +98,8 @@ axes:
       hard_limits: false
       pulloff_mm: 1.000
       standard_stepper:
-        step_pin: I2SO.5
-        direction_pin: I2SO.4
+        step_pin: I2SO.4
+        direction_pin: I2SO.5
         disable_pin: NO_PIN
         
 
