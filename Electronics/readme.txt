@@ -1,0 +1,1 @@
+EDA used is diptrace: https://diptrace.com/download/download-diptrace/
