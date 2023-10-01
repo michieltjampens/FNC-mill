@@ -18,7 +18,7 @@ axes:
     soft_limits: false
     homing:
       cycle: 2
-      positive_direction: false
+      positive_direction: true
       mpos_mm: 0.000
       feed_mm_per_min: 100.000
       seek_mm_per_min: 200.000
@@ -27,7 +27,7 @@ axes:
       feed_scaler: 1.100
 
     motor0:
-      limit_neg_pin: gpio.36:high
+      limit_neg_pin: gpio.36:low
       limit_pos_pin: gpio.39:high
       limit_all_pin: NO_PIN
       hard_limits: true
@@ -54,7 +54,7 @@ axes:
       feed_scaler: 1.100
 
     motor0:
-      limit_neg_pin: gpio.34:high
+      limit_neg_pin: gpio.34:low
       limit_pos_pin: gpio.35:high
       limit_all_pin: NO_PIN
       hard_limits: true
@@ -92,7 +92,7 @@ axes:
       feed_scaler: 1.100
 
     motor0:
-      limit_neg_pin: NO_PIN
+      limit_neg_pin: gpio.12
       limit_pos_pin: NO_PIN
       limit_all_pin: NO_PIN
       hard_limits: false
@@ -128,7 +128,7 @@ control:
   macro3_pin: NO_PIN
   
 probe:
-  pin: gpio.2
+  pin: gpio.13
   check_mode_start: true
 
 start:
